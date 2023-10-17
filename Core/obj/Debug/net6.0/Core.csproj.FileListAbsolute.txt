@@ -1,0 +1,12 @@
+D:\back-end asp.net track (Route)\06 ASP Core API\APIsProject\Core\bin\Debug\net6.0\Core.deps.json
+D:\back-end asp.net track (Route)\06 ASP Core API\APIsProject\Core\bin\Debug\net6.0\Core.dll
+D:\back-end asp.net track (Route)\06 ASP Core API\APIsProject\Core\bin\Debug\net6.0\Core.pdb
+D:\back-end asp.net track (Route)\06 ASP Core API\APIsProject\Core\obj\Debug\net6.0\Core.csproj.AssemblyReference.cache
+D:\back-end asp.net track (Route)\06 ASP Core API\APIsProject\Core\obj\Debug\net6.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\back-end asp.net track (Route)\06 ASP Core API\APIsProject\Core\obj\Debug\net6.0\Core.AssemblyInfoInputs.cache
+D:\back-end asp.net track (Route)\06 ASP Core API\APIsProject\Core\obj\Debug\net6.0\Core.AssemblyInfo.cs
+D:\back-end asp.net track (Route)\06 ASP Core API\APIsProject\Core\obj\Debug\net6.0\Core.csproj.CoreCompileInputs.cache
+D:\back-end asp.net track (Route)\06 ASP Core API\APIsProject\Core\obj\Debug\net6.0\Core.dll
+D:\back-end asp.net track (Route)\06 ASP Core API\APIsProject\Core\obj\Debug\net6.0\refint\Core.dll
+D:\back-end asp.net track (Route)\06 ASP Core API\APIsProject\Core\obj\Debug\net6.0\Core.pdb
+D:\back-end asp.net track (Route)\06 ASP Core API\APIsProject\Core\obj\Debug\net6.0\ref\Core.dll

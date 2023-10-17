@@ -1,0 +1,34 @@
+﻿using Core.Entities.Identity;
+using Infrastructure.Identity;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+
+namespace APIsMainProject.Extentions
+{
+    public static class IdentityServicesExtentions
+    {
+        public static IServiceCollection AddIdentityService(this IServiceCollection services,IConfiguration configuration)
+        {
+            var builder = services.AddIdentityCore<AppUser>();
+            builder = new IdentityBuilder(builder.UserType,builder.Services);
+            builder.AddEntityFrameworkStores<AppIdentityDbContext>();
+            builder.AddSignInManager<SignInManager<AppUser>>();
+            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(Options =>
+                {
+                    Options.TokenValidationParameters = new TokenValidationParameters 
+                    {
+                        ValidateIssuerSigningKey = true,
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Token:Key"])),
+                        ValidIssuer = configuration["Token:Issuer"],
+                        ValidateIssuer = true,
+                        ValidateAudience = false
+                    };
+                });
+            return services;
+        }
+    }
+}
